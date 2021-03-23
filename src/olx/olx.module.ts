@@ -9,6 +9,7 @@ import { OlxService } from './olx.service';
     TypeOrmModule.forFeature([OlxRepository])
   ],
   controllers: [OlxController],
-  providers: [OlxService]
+  providers: [OlxService],
+  exports: [OlxService]
 })
 export class OlxModule {}
